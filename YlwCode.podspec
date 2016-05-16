@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.author             = { "ylw" => "ylw" }
   s.source       = { :git => "https://github.com/meiguiai/YlwCode.git", :tag => "#{s.version}" }
   # s.source_files  = 'TestFramework/*.{swift}'
-  s.source_files = "TestFramework/**/*"
+  s.source_files = "TestFramework/TestFramework.framework"
   s.frameworks = "Foundation"
+  s.dependency 'Alamofire'
 end
